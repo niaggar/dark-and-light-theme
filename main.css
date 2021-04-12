@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
   color: #232225;
+  transition-duration: 1s;
 }
 
 /* Styles of the background */
@@ -35,11 +36,24 @@
 #footer {
   height: 10vh;
   width: 100vw;
+  background: #232225;
   /* Center the content */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#footer * {
+  color: #f3faeb;
+}
+
+#footer.dark {
+  background: #f3faeb;
+}
+
+#footer.dark * {
+  color: #343a40;
 }
 
 /* Styles of the button */
